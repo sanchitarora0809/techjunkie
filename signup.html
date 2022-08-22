@@ -1,0 +1,137 @@
+<html>
+    <head>
+        <title>
+            Sign up 
+        </title>
+        <style>
+
+
+body{
+    background-image: url("images/signup.png");
+}
+            
+.bb{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 50px;
+	
+}
+
+
+
+.c1{
+
+	/*margin: 50px;*/
+	margin-top: 60px;
+	text-align: center;
+	width: 450px;
+	height: 550px;
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 25px;
+	top:15%;
+	left:35%;
+	
+}
+.s1{
+	width: 450px;
+	height: 650px;
+	top:10%;
+}
+
+.user{
+	margin-top: 10px;
+	width: 50px;
+	height: 50px;
+}
+
+.loginbut{
+	padding: 10px;
+	font-size: 20px;
+	font-family: 'Pathway Gothic One', sans-serif;
+	background-color:rgba(0,0,0,0.5); 
+	color: white;
+}
+
+.side{
+	text-align: left;
+	margin-left: 25px;
+
+}
+
+.head{
+	color: white;
+	font-size: 3rem;
+}
+
+.head1{
+	color: white;
+	font-size: 1.5rem;
+	padding-top: 20px;
+}
+
+.boxx{
+	margin-top: 5px;
+	padding: 5px;
+	padding-left: 10px;
+	justify-content: center;
+	background-color: inherit;
+	border-color: white;
+	border-style: solid;
+	width: 400px;
+	color: white;
+	font-size: 1.2rem;
+}
+
+
+        </style>
+
+    </head>
+    <body>
+        
+  <div class="bb">
+    <div class="c1 s1">
+      <form name="registration" onsubmit="return formValidation();">
+        <img src="images\user.png" class="user">
+        <div class="head st hov1" style="color: white;">Sign Up
+        </div>
+        <div class="head1 st side" for="name">Name</div>
+        <input type="text" class="boxx st" name="name" required><br>
+
+        <div class="head1 st side" for="mail">E-Mail Id</div>
+        <input type="email" class="boxx" name="mail" required><br>
+
+        <div class="head1 st side" for="num">Phone Number</div>
+        <input type="text" class="boxx" name="num" required placeholder="10-digits required" maxlength="10"
+          pattern="\d{10}" style="color: white;"><br>
+
+        <div class="head1 st side" for="pass">Password</div>
+        <input type="password" class="boxx" name="pass" style="text-decoration: none" required><br>
+
+        <div class="head1 st side" for="pass1">Confirm Password</div>
+        <input type="password" class="boxx" name="pass1" required><br>
+
+        <div style="padding-top:30px; "><button class="loginbut" name="submit" value="submit" type="submit" onclick="popup()"
+            >Sign Up</button></div>
+			<div>
+				<p style="color: white;"> Existing User? <a href="login.html" style="color:white"  ondblclick="window.location.href='login.html'">Login</a></p>
+			</div>
+			<script src="Website Project/Html/validation.js"></script>
+        <script>
+          function popup() {
+            alert("Sign UP successful");
+  
+}
+          
+
+        </script>
+
+
+
+      </form>
+    </div>
+  </div>
+
+
+    </body>
+</html>

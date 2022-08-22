@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Login page
+        </title>
+        <link rel="stylesheet" href="home1.css">
+    </head>
+    <style>
+        body{
+            background-image: url("images/signup.png");
+        }
+    .bb{
+            margin-top: 5%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin-bottom: 50px;
+	
+}
+
+
+
+.c1{
+
+	/*margin: 50px;*/
+	margin-top: 60px;
+	text-align: center;
+	width: 450px;
+	height: 550px;
+	background-color: rgba(255,255,255,0.4);
+	border-radius: 25px;
+	top:15%;
+	left:35%;
+	
+}
+.s1{
+	width: 450px;
+	height: 650px;
+	top:10%;
+}
+
+.user{
+	margin-top: 10px;
+	width: 50px;
+	height: 50px;
+}
+
+.loginbut{
+	padding: 10px;
+	font-size: 20px;
+	font-family: 'Pathway Gothic One', sans-serif;
+	background-color:rgba(0,0,0,0.5); 
+	color: white;
+}
+
+.side{
+	text-align: left;
+	margin-left: 25px;
+
+}
+
+.head{
+	color: white;
+	font-size: 3rem;
+}
+
+.head1{
+	color: white;
+	font-size: 1.5rem;
+	padding-top: 20px;
+}
+
+.boxx{
+	margin-top: 5px;
+	padding: 5px;
+	padding-left: 10px;
+	justify-content: center;
+	background-color: inherit;
+	border-color: white;
+	border-style: solid;
+	width: 400px;
+	color: white;
+	font-size: 1.2rem;
+}
+    </style>
+    <body>
+        <div class="header">
+            <ul>
+                <div clas="logo"><li class="header1">logo</li></div>
+                <li class="header1"><a href="home.html">Home</a></li>
+                <li class="header1"><a href="category.html">Shop</a></li>
+                <li class="header1"><a href="ABOUT.HTML">About Us</a></li>
+                <li class="header1"><a href="blog.html">Blog</a></li>
+                <li class="header1"><a href="#"> Contact</a></li>
+                <li class="header2"><a href="login.html">Login </a></li>
+                <li class="header2"><a href="#"><input type="text" placeholder="Search.."></a></li>
+                <li class="header2"><a href="#">Cart</a></li>
+
+            </ul>
+            </div>
+            <div class="bb">
+                <div class="c1 s1" style="height: 450px;">
+                <form name="login" onsubmit="return LoginValidation();">
+                    <img src="images/user.png" class="user">
+                    <div class="head st hov1" style="color: white;"> Login</div>
+                
+                    <div class="head1 st side" for="name">Name</div>
+                    <input type="text" class="boxx st" name="name"><br>
+                
+                    <div class="head1 st side" for="pass">Password</div>
+                    <input type="password" class="boxx" name="pass" style="text-decoration: none"><br>
+                
+                    <div style="padding-top:30px;"><button class="loginbut" onclick="popup()"  type="submit" value="submit"  name="submit">Login</button>
+                
+                <div class="head1 st side"> Don't Have An Account? <a href="Signup.html" style="color: white;" class="hov1">SignUp Now </a> </div>
+                
+                    </div>
+                </form>
+                </div>
+                </div>
+                <div class="footer">
+	
+                    <div class="cont">
+                        <h1 class="center st">About</h1>
+                        <hr style="margin-top: 0px;">
+                        <p class="center st size" style="margin-bottom: 10px;">FitChit want to help you live a fit and healthy lifestyle! We do this by helping you find the most suitable equipment for your home gym, studio or commercial gym, keeping your budget, lifestyle and fitness goals in mind. We stock a wide range of gym equipment, with strength equipment, cardio, cross training and so much more. Our awesome team is always keen to help.</p>
+                    </div>
+            
+                    <div class="cont">
+                        <h1 class="center st">Support</h1>
+                        <hr style="margin-top: 0px;">
+                        <p>
+                            <li class="st size" >Account</li>
+                            <li class="st size" >Shopping</li>
+                            <li class="st size" >Warranty &amp; Returns</li>
+                            <li class="st size" >Financing Options</li>
+                            <li class="st size" >Privacy</li>
+                            <li class="st size" >Terms</li>
+                            <li class="st size" ><a href="feedback.html">FAQ</a></li>
+            
+            
+                        </p>
+                    </div>
+            
+                    
+                    <div class="cont">
+                        <h1 class="center st">Follow Us</h1>
+                        <hr style="margin-top: 0px;">
+                        <p class="center st size">Follow us on different platforms to know us and stay tuned for exciting offers !!</p>
+                        <div class="icon1">
+                                <a href="#" class="fa fa-instagram" id="icon"></a>
+                                <a href="#" class="fa fa-google" id="icon"></a>
+                                <a href="#" class="fa fa-facebook" id="icon"></a>
+                        </div>
+                    </div>
+            
+            
+                    <div class="cont">
+                        <h1 class="center st">Contact Us</h1>
+                        <hr style="margin-top: 0px;">
+                        <p class="center st size"> Wanna know more contact us !!</p>
+                        <p class="center st size"> +91-123xxxxxxx</p>
+                        <p class="center st size"> +91-987xxxxxxx</p>
+                        <p class="center st size" style="color: red"> Fitchit@gmail.com</p>
+            
+                    </div>
+            
+            
+            
+            </div>
+            <script src="Website Project/Html/loginValidation.js"></script>
+            <script>
+                function popup() {
+      if(confirm("Login Done , you may move back to home page")){
+        window.location.href="home.html";
+      }
+    }
+                
+      
+              </script>
+                
+                
+                
+                
+
+    </body>
+</html>
